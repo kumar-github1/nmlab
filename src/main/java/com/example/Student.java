@@ -1,7 +1,4 @@
-package main.java.com.example;
-
-import java.util.*;
-import java.lang.*;
+package com.example;
 
 public class Student {
     String name;

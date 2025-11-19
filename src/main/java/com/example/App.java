@@ -1,19 +1,16 @@
 package com.example;
-import main.java.com.*;
 import java.util.*;
-import java.lang.*;
 
 public class App 
 {
-    {
-    List<Student> list = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
-    }
+    static List<Student> list = new ArrayList<>();
     public static void main(String[] args)
     {
+            Scanner scanner = new Scanner(System.in);
+
         while(true) {
             System.out.println("1. Add a student\n2.Remove a student\n3.Student Details\n4.Edit the Student");
-            int choice = sc.nextInt();
+            int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     addStudent();        
@@ -31,7 +28,21 @@ public class App
     }
 
 
+    private static void studentDetails() {
+    }
+
+
+    private static void removeStudent() {
+    }
+
+
+    private static void editStudentDetails() {
+    }
+
+
     public static void addStudent(){
+            Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter the name:");
         String name = scanner.nextLine();
         System.out.println("Enter the age:");
@@ -41,4 +52,5 @@ public class App
         Student student = new Student(name, age, year);
         list.add(student);
     }
+    
 }
